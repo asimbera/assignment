@@ -1,9 +1,12 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper, onecolumn]{article}
 
+\usepackage[margin=2.54cm]{geometry}
+\usepackage{tgbonum}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
-\usepackage{listings}
 \usepackage{minted}
+
+% \renewcommand{\labelitemi}{$\blacksquare$}
 
 \graphicspath{ {./outputs/} }
 
@@ -11,24 +14,27 @@
 \fancyhf{}
 \rhead{Asim Bera}
 \lhead{Programming in C}
-\rfoot{Page \thepage}
+\rfoot{\thepage}
 
 \begin{document}
 
+\pagenumbering{gobble}
+\input{bookcover}
 \tableofcontents
 \newpage
+\pagenumbering{arabic}
 
 
-\section{Assignment 1}
+\section{Assignment \#1}
 
 % begin subsection
 
 \subsection{Write a C program to perform input/output of all basic data types.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P01.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P01.png}
@@ -41,11 +47,11 @@
 % begin subsection
 
 \subsection{Write a C program to enter two numbers and find their sum.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P02.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P02}
@@ -58,11 +64,11 @@
 % begin subsection
 
 \subsection{Write a C program to enter two numbers and perform all arithmetic operations.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P03.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P03}
@@ -75,11 +81,11 @@
 % begin subsection
 
 \subsection{Write a C program to enter length and breadth of a rectangle and find its perimeter.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P04.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P04}
@@ -92,11 +98,11 @@
 % begin subsection
 
 \subsection{Write a C program to enter length and breadth of a rectangle and find its area.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P05.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P05}
@@ -109,11 +115,11 @@
 % begin subsection
 
 \subsection{Write a C program to enter radius of a circle find its diameter, circumference and area.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P06.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P06}
@@ -126,11 +132,11 @@
 % begin subsection
 
 \subsection{Write a program to enter length in cm and convrt it into meter and kilometer.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P07.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P07}
@@ -143,11 +149,11 @@
 % begin subsection
 
 \subsection{Write a program to enter temperature in Celsius and convert it into Farenheit}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P08.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P08}
@@ -160,11 +166,11 @@
 % begin subsection
 
 \subsection{Write a program to enter temperature in Farenheit and convert it into Celsius}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P09.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P09}
@@ -177,11 +183,11 @@
 % begin subsection
 
 \subsection{Write a C program to convert days into years, weeks and days.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P10.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P10}
@@ -194,11 +200,11 @@
 % begin subsection
 
 \subsection{Write a C program to find x\textsuperscript{y} of any number x and power y.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P11.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P11}
@@ -211,11 +217,11 @@
 % begin subsection
 
 \subsection{Write a C program to enter any number and calculate its square root.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P12.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P12}
@@ -228,11 +234,11 @@
 % begin subsection
 
 \subsection{Write a C program to enter two angles of a triangle and find its third angle.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P13.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P13}
@@ -245,11 +251,11 @@
 % begin subsection
 
 \subsection{Write a C program to enter base and height of a triangle and find its area.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P14.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P14}
@@ -262,11 +268,11 @@
 % begin subsection
 
 \subsection{Write a C program to calculate area of an equilateral triangle.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P15.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P15}
@@ -279,11 +285,11 @@
 % begin subsection
 
 \subsection{Write a C program to enter marks of five subjects and calculate total, average and percentage.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P16.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P16}
@@ -296,11 +302,11 @@
 % begin subsection
 
 \subsection{Write a C program to enter P, T, R and calculate Simple Interest.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P17.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P17}
@@ -313,11 +319,11 @@
 % begin subsection
 
 \subsection{Write a C program to enter P, T, R and calculate Compound Interest.}
-\textbf{Code}
+\textbf{Program Code}
 
 \inputminted{C}{programs/A01_P18.c}
 
-\textbf{Output}
+\textbf{Program Output}
 
 \begin{figure}[h]
   \includegraphics[width=12cm]{A01_P18}
