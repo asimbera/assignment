@@ -1,0 +1,35 @@
+\documentclass[a4paper, onecolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.54cm]{geometry}
+\usepackage[mathletters]{ucs}
+\usepackage{tgbonum}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[]{minted}
+
+% \renewcommand{\labelitemi}{$\blacksquare$}
+
+\graphicspath{ {./outputs/} }
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Asim Bera}
+\lhead{Programming in C}
+\rfoot{\thepage}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\input{bookcover}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+
+\input{assignment_001}
+\input{assignment_002}
+% \input{assignment_003}
+
+
+\end{document}
